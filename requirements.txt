@@ -1,0 +1,6 @@
+numpy
+matplotlib>=3.7.5
+pyscipopt>=5.4.1
+torch
+torch-geometric>=2.6.1
+wandb>=0.20.1

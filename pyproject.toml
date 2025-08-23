@@ -1,0 +1,13 @@
+[project]
+name = "lagrangemax2sat"
+version = "0.1.0"
+description = "Learns to predict good quality dual multipliers"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "matplotlib>=3.7.5",
+    "pyscipopt>=5.4.1",
+    "torch",
+    "torch-geometric>=2.6.1",
+    "wandb>=0.20.1",
+]
