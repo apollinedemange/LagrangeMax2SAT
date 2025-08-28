@@ -10,22 +10,17 @@ This project proposes a novel perspective: finding Weighted Max-2SAT lower bound
 
 ## Deployed Models
 
-We provide three pretrained models of different sizes and trained on different Weighted Max-2SAT instance configurations.
+We provide a pretrained model trained on Weighted Max-2SAT instances of identical size.
 
 | Model Name              | Variables | Clauses | Layers | Embedding size | Description                                                   |
 |-------------------------|-----------|---------|--------|----------------|---------------------------------------------------------------|
-| `50c_10v_12l_256hd`     | 10        | 50      | 12     | 256            | Training on easy Weighted Max-2SAT problems and large model   |
-| `400c_50v_12l_256hd`    | 50        | 400     | 12     | 256            | Training on bigger Weighted Max-2SAT problems and large model |
-| `400c_50v_6l_128hd`     | 50        | 400     | 6      | 128            | Training on bigger Weighted Max-2SAT problems and small model |
-
-Each model can be used for inference with the corresponding config and checkpoint
+| `400c_50v_6l_128hd`     | 50        | 400     | 6      | 128            | Training big Weighted Max-2SAT problems and small model |
 
 ## Inference
 
 You can run inference on new wcnf files to predict lower bound approximately.
 
-### Run Inference
-In the case of Dense Encoding approach, 
+### Run Inference 
 
 ```bash
 python lagrangemax2sat/inference.py --ckpt_path models/mode_name.ckpt \
